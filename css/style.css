@@ -22,19 +22,19 @@ use the fonts in other ways in the font hierarchy etc. */
   --color-5: rebeccapurple;
 
   --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --secondary-font: "Poppins", sans-serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
 
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
+  --bg-color: #d7b59f;
+  --link-color: #910000;
+  --link-hover-color: #bac0cd;
+  --color-4: #d8ad7d;
+  --color-5: #d6664a;
 
   --primary-font: sans-serif;
-  --secondary-font: serif;
+  --secondary-font: sans-serif;
   --main-text-color: #000;
 
   --white-space: 2rem;
@@ -48,6 +48,7 @@ html {
 img {
   max-width: 100%;
   height: auto;
+  width: 50%;
 }
 
 header,
@@ -56,6 +57,10 @@ footer {
   max-width: 1300px;
   margin: 0 auto;
   padding: calc(2 * var(--white-space));
+}
+
+body {
+  background-color: #f0eae2;
 }
 
 .full-width {
@@ -70,14 +75,16 @@ footer {
   letter-spacing: -2px;
   padding-right: 0.75em;
   font-weight: bold;
-  color: white;
+  color: #910000;
+  font-family: "Poppins", sans-serif;
 }
 
 .header-wrapper h2 {
   font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
+  color: #910000;
   font-weight: bold;
   margin: var(--white-space) 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .header-wrapper h3 {
@@ -99,10 +106,12 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
-  font-size: 1.3rem;
-  color: #777;
+  font-size: 1rem;
+  color: #d6664a;
   margin: 0.5rem 0;
+  font-family: "Open Sans", sans-serif;
+  /* text-transform: uppercase; */
+  /* font-weight: 600; */
 }
 
 ul {
@@ -146,21 +155,9 @@ ul li:last-child {
   margin-right: 5vw;
 }
 
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
-}
-
-.texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
-}
-
-.texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
-}
+/* .texture-swatch-1 {
+  background: url(../img/logo.png) top left repeat;
+} */
 
 .images ul {
   flex-direction: column;
@@ -222,11 +219,12 @@ button:active {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #910000;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
+  font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
 }
 
@@ -269,7 +267,7 @@ p[class*="font-details-"] {
 }
 
 .adjectives ul {
-  font-size: 2rem;
+  font-size: 1rem;
   opacity: 0.5;
 }
 
